@@ -1,11 +1,11 @@
 package dragons;
 
-class FBHead {
+public class FBHead {
 
     private double firePower;
     private int rechargeTime;
 
-    FBHead(double firePower, int rechargeTime) {
+    public FBHead(double firePower, int rechargeTime) {
         this.firePower = firePower;
         this.rechargeTime = rechargeTime;
     }

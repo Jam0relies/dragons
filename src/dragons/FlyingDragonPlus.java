@@ -10,6 +10,7 @@ public class FlyingDragonPlus extends Dragon implements FlyablePlus {
         this.wingPairs = wingPairs;
     }
 
+
     @Override
     public double getWingspan(int wingPair, int wingId) {
         return wingPairs.get(wingPair).getWing(wingId).getWingspan();
@@ -28,6 +29,11 @@ public class FlyingDragonPlus extends Dragon implements FlyablePlus {
     @Override
     public void setWingType(int wingPair, int wingId, Wing.WingType type) {
         wingPairs.get(wingPair).getWing(wingId).setType(type);
+    }
+
+    @Override
+    public List<WingPair> getWingPairs() {
+        return wingPairs;
     }
 
     @Override
